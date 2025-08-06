@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+    <button id="menu-btn">☰</button>
+    <nav id="nav-menu">
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="filter-buttons">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="web">Web</button>
+      <button class="filter-btn" data-category="design">Design</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card" data-category="web">Web Project 1</div>
+      <div class="project-card" data-category="design">Design Project 1</div>
+      <div class="project-card" data-category="web">Web Project 2</div>
+      <div class="project-card" data-category="design">Design Project 2</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" maxlength="200" placeholder="Your Message (max 200 characters)" required></textarea>
+      <p><span id="char-count">200</span> characters remaining</p>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
